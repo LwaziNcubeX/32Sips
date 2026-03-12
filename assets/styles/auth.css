@@ -5,9 +5,9 @@
 }
 
 :root {
-    --bg: #f8f6f1;
-    --card: rgba(255, 255, 255, 0.92);
-    --text: #363636;
+    --bg: #f5f5f5;
+    --card: #fff;
+    --text: #2a2a2a;
 }
 
 body {
@@ -28,7 +28,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 30px;
-    background: linear-gradient(135deg, #fffdf8, #fff7ed);
+    background: var(--bg);
 }
 
 .auth-card {
@@ -38,6 +38,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.4);
     padding: 36px 28px;
     box-shadow: var(0 20px 60px rgba(0,0,0.12));
+    border-radius: 20px;
 }
 
 .brand {
@@ -53,6 +54,15 @@ body {
 
 .form-div {
     margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
 }
 
 label {
@@ -112,12 +122,12 @@ input:focus {
 }
 
 .auth-button:hover {
-    background: #04c772;
+    background: #fede00;
 }
 
 .signup-text {
     text-align: center;
-    color: #363636;
+    color: #2a2a2a;
     margin-top: 20px;
     font-weight: 0.93rem;
 }
