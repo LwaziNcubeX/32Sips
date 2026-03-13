@@ -49,4 +49,28 @@ function updateCartCount() {
 
 }
 
+
+function syncCartButtons() {
+  let cart = JSON.parse(localStorage.getItem("cart")) || []
+
+  let buttons = document.querySelectorAll(".order-now")
+
+  buttons.forEach(button => {
+    let productName = button.dataset.name
+    let existsInCart = cart.find(item => item.name === productName)
+
+    if (existsInCart) {
+      button.innerHTML = `✓ Added`
+      button.classList.add("added")
+    } else {
+      button.innerHTML = `
+        <img src="/assets/images/cart.svg" alt="cart icon" height="18" />
+        Add to cart
+      `
+      button.classList.remove("added")
+    }
+  })
+}
+
 updateCartCount();
+syncCartButtons();
