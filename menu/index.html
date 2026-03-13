@@ -29,6 +29,7 @@
         <h1>Our Juice Menu</h1>
         <p>Freshly pressed drinks made from natural fruits.</p>
       </section>
+
       <section class="menu-category">
         <h2>Citrus Classics</h2>
 
@@ -37,9 +38,10 @@
             <div class="product-cover lemon"></div>
             <h3>Lemon Fresh</h3>
             <p>A crisp lemon juice with bright citrus flavor.</p>
+
             <div class="card-bottom">
               <span class="price">$4.50</span>
-              <button class="order-now">
+              <button class="order-now" onclick="addToCart('Lemon Fresh', 4.5)">
                 <img
                   src="/assets/images/cart.svg"
                   alt="cart icon"
@@ -54,11 +56,12 @@
             <div class="product-cover orange"></div>
             <h3>Orange Burst</h3>
             <p>Sweet and refreshing orange juice packed with vitamin C.</p>
+
             <div class="card-bottom">
-              <span class="price">$4.50</span>
+              <span class="price">$3.75</span>
               <button
                 class="order-now"
-                onclick="addToCart('Orange Bust, 4.50')"
+                onclick="addToCart('Orange Burst', 3.75)"
               >
                 <img
                   src="/assets/images/cart.svg"
@@ -76,8 +79,11 @@
             <p>Bold grapefruit flavor with a refreshing tang.</p>
 
             <div class="card-bottom">
-              <span class="price">$4.50</span>
-              <button class="order-now">
+              <span class="price">$4.90</span>
+              <button
+                class="order-now"
+                onclick="addToCart('Grapefruit Splash', 4.9)"
+              >
                 <img
                   src="/assets/images/cart.svg"
                   alt="cart icon"
@@ -90,13 +96,14 @@
 
           <div class="product-item">
             <div class="product-cover tangerine"></div>
-            <h3>Tangerine glow</h3>
-            <p>A crisp lemon juice with bright citrus flavor.</p>
+            <h3>Tangerine Glow</h3>
+            <p>A bright citrus drink with smooth tangerine sweetness.</p>
+
             <div class="card-bottom">
-              <span class="price">$4.50</span>
+              <span class="price">$4.80</span>
               <button
                 class="order-now"
-                onclick="addToCart('Orange Bust, 4.50')"
+                onclick="addToCart('Tangerine Glow', 4.8)"
               >
                 <img
                   src="/assets/images/cart.svg"
@@ -105,21 +112,17 @@
                 />
                 Add to cart
               </button>
-              <div class="quantinty-controls">
-                <button class="qty-btn minus">-</button>
-                <span class="qty">0</span>
-                <button class="qty-btn plus">+</button>
-              </div>
             </div>
           </div>
 
           <div class="product-item">
             <div class="product-cover lime"></div>
             <h3>Lime Zing</h3>
-            <p>A crisp lemon juice with bright citrus flavor.</p>
+            <p>A sharp and refreshing lime juice with vibrant flavor.</p>
+
             <div class="card-bottom">
-              <span class="price">$4.50</span>
-              <button class="order-now">
+              <span class="price">$4.60</span>
+              <button class="order-now" onclick="addToCart('Lime Zing', 4.6)">
                 <img
                   src="/assets/images/cart.svg"
                   alt="cart icon"
@@ -132,11 +135,12 @@
 
           <div class="product-item">
             <div class="product-cover citrusmix"></div>
-            <h3>Citrusmix</h3>
-            <p>A crisp lemon juice with bright citrus flavor.</p>
+            <h3>Citrus Mix</h3>
+            <p>A vibrant blend of orange, lemon, and lime.</p>
+
             <div class="card-bottom">
-              <span class="price">$4.50</span>
-              <button class="order-now">
+              <span class="price">$5.00</span>
+              <button class="order-now" onclick="addToCart('Citrus Mix', 5.0)">
                 <img
                   src="/assets/images/cart.svg"
                   alt="cart icon"
