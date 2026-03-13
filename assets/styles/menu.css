@@ -259,21 +259,26 @@ body {
 }
 
 .cart-button {
-  font-size: medium;
-  padding: 5px;
   background: #fec000;
-  color: #fff;
   border: none;
-  cursor: pointer;
-  font-weight: bold;
+  padding: 10px 20px;
   border-radius: 30px;
-  transition: transform 0.2s ease, background 0.2s ease;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
 }
 
 .cart-button a {
-  color: #2a2a2a;
   text-decoration: none;
-  margin-left: 3px;
+  color: #212121;
+  font-weight: 600;
+  font-size: 14px;
+  display: block;
+}
+
+.cart-button:hover {
+  background: #fede00;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
 .order-now {
