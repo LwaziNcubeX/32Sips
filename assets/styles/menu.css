@@ -259,8 +259,7 @@ body {
 }
 
 .cart-button {
-  font-size: larger;
-  width: 70px;
+  font-size: medium;
   padding: 5px;
   background: #fec000;
   color: #fff;
