@@ -277,3 +277,22 @@ body {
   margin-left: 3px;
 }
 
+.order-now {
+  font-size: medium;
+  padding: 8px;
+  background: #aaa;
+  color:#2a2a2a;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.card-bottom {
+  margin-bottom: 5px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
